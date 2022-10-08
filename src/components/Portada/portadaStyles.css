@@ -1,0 +1,62 @@
+section {
+  background: #200122;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6f0000, #200122);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.portada__container {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portada__container div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+.portada__text p {
+  font-size: 2.5rem;
+}
+
+.portada__text h1 {
+  font-size: 4.5rem;
+  padding: 20px 0;
+}
+
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
