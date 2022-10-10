@@ -9,7 +9,6 @@ html,
 body {
   font-size: 10px;
   scroll-behavior: smooth;
-  overflow-y: hidden;
 }
 
 section {

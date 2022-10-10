@@ -20,7 +20,7 @@ function Nav() {
         <a href='#contactMe'><TbMessage2 /></a>
       </nav>
 
-      <div>
+      <div className='title-navigation'>
         <p>Portada</p>
         <p>About me</p>
         <p>Experience</p>

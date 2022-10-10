@@ -1,43 +1,49 @@
 section {
-  background: #200122;
+  background: #141E30;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6f0000, #200122);
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6f0000, #200122);
+  background: linear-gradient(to right, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
+#portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .portada__container {
-  width: 85vw;
+  width: 75vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.portada__container div {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .portada__text {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: aliceblue;
+  letter-spacing: 3px;
 }
 
 .portada__text p {
   font-size: 2.5rem;
+  color: #AEBDD0;
 }
 
 .portada__text h1 {
   font-size: 4.5rem;
   padding: 20px 0;
+  font-weight: bold;
+}
+
+.portada__text h3 {
+  font-size: 3rem;
 }
 
 .hero {
@@ -47,7 +53,88 @@ section {
   animation: updown 3s linear infinite;
 }
 
-@keyframes updown {
+.portada__buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 110px;
+
+}
+
+.portada__buttons button {
+  width: 125px;
+  height: 45px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  transition: ease-in .2s;
+  transition-property: color, background-color;
+}
+
+.portada__buttons button:nth-child(1) {
+  background-color: #F64159;
+}
+
+.portada__buttons button:nth-child(1):hover {
+  background-color: white;
+  color: #F64159;
+}
+
+.portada__buttons button:active {
+  transform: translateY(3px);
+  box-shadow: 3px 3px 3px black;
+}
+
+
+.portada__buttons button:nth-child(2) {
+  background-color: #294773;
+}
+
+.portada__buttons button:nth-child(2):hover {
+  background-color: white;
+  color: #294773;
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 2.5rem;
+  bottom: 0;
+  left: 5%;
+  gap: 5px;
+}
+
+.links div {
+  height: 100px;
+  background-color: white;
+  width: 3px;
+  margin: 0 auto;
+}
+
+.links a {
+  color: white;
+}
+
+.links a:hover {
+  color: #F64159;
+}
+
+
+.red {
+  color: #F64159;
+}
+
+/* @keyframes updown {
   0% {
     transform: translateY(-25px);
   }
@@ -59,4 +146,4 @@ section {
   100% {
     transform: translateY(-25px);
   }
-}
+} */

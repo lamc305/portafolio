@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Todo-App",
+    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
+    "id": "1",
+    "tecnologies": "ReactJS, CSS vanilla, Framer Motion"
+  },
+  {
+    "name": "Movie-rec",
+    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
+    "id": "2",
+    "tecnologies": "ReactJS, Chakra UI, Framer Motion"
+  },
+  {
+    "name": "Pizzería Don Remolo",
+    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
+    "id": "3",
+    "tecnologies": "ReactJS, CSS vanilla, Interseption Observer"
+  },
+  {
+    "name": "Rest Countries",
+    "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__dark.png",
+    "id": "4",
+    "tecnologies": "ReactJS, CSS vanilla"
+  }
+]
