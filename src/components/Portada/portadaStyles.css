@@ -121,8 +121,11 @@ section {
   margin: 0 auto;
 }
 
+
 .links a {
   color: white;
+  transition: .5s;
+  transition-property: color;
 }
 
 .links a:hover {

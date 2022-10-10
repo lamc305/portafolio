@@ -4,20 +4,21 @@ import { SiAboutdotme } from 'react-icons/si'
 import { MdOutlineWork } from 'react-icons/md'
 import { TbMessage2 } from 'react-icons/tb'
 import { RiComputerFill } from 'react-icons/ri'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { IntersectionObserver } from '../../context/IntersectionObserver'
 function Nav() {
 
-  const [isActive, setIsActive] = useState('')
+  const { toggleActive } = useContext(IntersectionObserver)
 
   return (
     <div className='navigation'>
-
+    
       <nav>
-        <a href='#portada'><FaHome /></a>
-        <a href='#aboutMe'><SiAboutdotme /></a>
-        <a href='#experience'><MdOutlineWork /></a>
-        <a href='#projects'><RiComputerFill /></a>
-        <a href='#contactMe'><TbMessage2 /></a>
+        <a className={`${toggleActive === 'portada' ? 'active' : ''}`} href='#portada'><FaHome /></a>
+        <a className={`${toggleActive === 'aboutMe' ? 'active' : ''}`} href='#aboutMe'><SiAboutdotme /></a>
+        <a className={`${toggleActive === 'experience' ? 'active' : ''}`} href='#experience'><MdOutlineWork /></a>
+        <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'><RiComputerFill /></a>
+        <a className={`${toggleActive === 'contactMe' ? 'active' : ''}`} href='#contactMe'><TbMessage2 /></a>
       </nav>
 
       <div className='title-navigation'>

@@ -62,6 +62,11 @@ nav a {
   transition: scale .3s;
 }
 
+.active {
+  background-color: #F64159;
+  transition: color .5s;
+}
+
 nav a:hover {
   scale: 1.2;
 }

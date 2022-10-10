@@ -5,18 +5,21 @@ import Experience from './components/Experience'
 import Nav from './components/Nav'
 import Portada from './components/Portada'
 import Projects from './components/Projects'
+import { IntersectionObserverProvider } from './context/IntersectionObserver'
 
 function App() {
 
 
   return (
     <div className="App">
-      <Nav />
-      <Portada />
-      <AboutMe />
-      <Experience />
-      <Projects />
-      <ContactMe />
+      <IntersectionObserverProvider>
+        <Nav />
+        <Portada />
+        <AboutMe />
+        <Experience />
+        <Projects />
+        <ContactMe />
+      </IntersectionObserverProvider>
     </div>
   )
 }
