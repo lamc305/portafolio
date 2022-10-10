@@ -134,4 +134,16 @@ section {
   color: #F64159;
 }
 
-j
+@keyframes updown {
+  0% {
+    transform: translateY(-25px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(-25px);
+  }
+}
