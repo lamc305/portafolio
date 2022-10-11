@@ -3,24 +3,32 @@
     "name": "Todo-App",
     "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
     "id": "1",
-    "tecnologies": "ReactJS, CSS vanilla, Framer Motion"
+    "tecnologies": "ReactJS, CSS vanilla, Framer Motion",
+    "repositorio": "https://github.com/lamc305/Todo-App",
+    "live": "https://todo-app-lamc305.vercel.app/"
   },
   {
     "name": "Movie-rec",
     "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
     "id": "2",
-    "tecnologies": "ReactJS, Chakra UI, Framer Motion"
+    "tecnologies": "ReactJS, Chakra UI, Framer Motion",
+    "repositorio": "https://github.com/lamc305/Movie-rec",
+    "live": "https://movie-rec.vercel.app/"
   },
   {
     "name": "Pizzería Don Remolo",
     "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
     "id": "3",
-    "tecnologies": "ReactJS, CSS vanilla, Interseption Observer"
+    "tecnologies": "ReactJS, CSS vanilla, Interseption Observer",
+    "repositorio": "https://github.com/lamc305/Pizzeria-736",
+    "live": "https://famous-kataifi-bc90bc.netlify.app/"
   },
   {
     "name": "Rest Countries",
     "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__dark.png",
     "id": "4",
-    "tecnologies": "ReactJS, CSS vanilla"
+    "tecnologies": "ReactJS, CSS vanilla",
+    "repositorio": "https://github.com/lamc305/Rest-Countries",
+    "live": "https://rest-countries-lamc305.vercel.app/"
   }
 ]
