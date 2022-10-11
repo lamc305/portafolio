@@ -5,16 +5,16 @@ import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 function Portada() {
 
-  const { ref1 } = useContext(IntersectionObserver)
+  const { ref1, inView1 } = useContext(IntersectionObserver)
 
   return (
     <section id='portada' ref={ref1}>
       <div className='portada__container'>
         <div className='portada__text'>
-          <p>Hi there</p>
-          <h1>I'm <span className='red'>Luis Medina</span></h1>
-          <h3>I am a Frontend Developer</h3>
-          <div className='portada__buttons'>
+          <p className={`${inView1 ? 'animated__entryText' : ' '}`}>Hi there</p>
+          <h1 className={`${inView1 ? 'animated__entryText' : ' '}`}>I'm <span className='red'>Luis Medina</span></h1>
+          <h3 className={`${inView1 ? 'animated__entryText' : ' '}`}>I am a Frontend Developer</h3>
+          <div className={`${inView1 ? 'animated__entryText portada__buttons' : 'portada__buttons '}`} >
             <button>Resume</button>
             <button>Contact me</button>
           </div>

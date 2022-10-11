@@ -60,7 +60,6 @@ section {
   align-items: center;
   width: 100%;
   gap: 110px;
-
 }
 
 .portada__buttons button {
@@ -92,6 +91,9 @@ section {
   box-shadow: 3px 3px 3px black;
 }
 
+.animated__entryText {
+  animation: slidein 1s linear;
+}
 
 .portada__buttons button:nth-child(2) {
   background-color: #294773;
@@ -112,6 +114,7 @@ section {
   bottom: 0;
   left: 5%;
   gap: 5px;
+  animation: entryLinks 2s linear;
 }
 
 .links div {
@@ -148,5 +151,33 @@ section {
 
   100% {
     transform: translateY(-25px);
+  }
+}
+
+@keyframes entryLinks {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(350px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

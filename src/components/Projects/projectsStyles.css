@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  gap: 50px
+  gap: 100px
 }
 
 #projects h2 {
@@ -14,8 +14,10 @@
 
 .container__projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fill, 330px);
+  place-content: center;
   width: 85vw;
   margin: 0 auto;
   gap: 20px;
@@ -65,8 +67,49 @@
   text-align: center;
 }
 
+.animate__projects {
+  animation: entryProjects 1s linear;
+}
+
+.links__projects {
+  color: white;
+  font-size: 3.9rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.links__projects a:first-child {
+  padding-right: 10px;
+}
+
+.links__projects a {
+  color: white;
+}
+
+
+
+.links__projects a:hover {
+  color: #F64159;
+}
+
 .text p {
   margin-bottom: 20px;
   display: block;
   width: 100%;
+}
+
+@keyframes entryProjects {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

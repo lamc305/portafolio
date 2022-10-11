@@ -1,0 +1,80 @@
+#aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+  gap: 100px
+}
+
+#aboutMe h2 {
+  font-size: 3rem;
+}
+
+.animate__textAbout {
+  animation: entryText 1s linear;
+}
+
+.aboutMe__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1440px;
+  gap: 50px;
+}
+
+.aboutMe__img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 68% 32% 70% 30% / 51% 57% 43% 49%;
+  box-shadow: 0 3px 3px black;
+  filter: drop-shadow(0px 5px 5px black);
+
+}
+
+.animated__img {
+  animation: entry 1s linear;
+}
+
+.aboutMe__text {
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+@keyframes entry {
+  0% {
+    transform: rotate(360deg) scale(0.2)
+  }
+
+  25% {
+    transform: rotate(270deg) scale(0.4)
+  }
+
+  50% {
+    transform: rotate(180deg) scale(0.6);
+  }
+
+  75% {
+    transform: rotate(90deg) scale(0.8);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+
+}
+
+
+@keyframes entryText {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
