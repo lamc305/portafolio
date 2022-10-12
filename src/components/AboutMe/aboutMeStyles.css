@@ -28,9 +28,7 @@
   width: 100%;
   object-fit: contain;
   border-radius: 68% 32% 70% 30% / 51% 57% 43% 49%;
-  box-shadow: 0 3px 3px black;
-  filter: drop-shadow(0px 5px 5px black);
-
+  box-shadow: -5px 5px 10px black;
 }
 
 .animated__img {
@@ -43,23 +41,12 @@
 }
 
 @keyframes entry {
-  0% {
-    transform: rotate(360deg) scale(0.2)
+
+  from {
+    transform: rotate(360deg) scale(0)
   }
 
-  25% {
-    transform: rotate(270deg) scale(0.4)
-  }
-
-  50% {
-    transform: rotate(180deg) scale(0.6);
-  }
-
-  75% {
-    transform: rotate(90deg) scale(0.8);
-  }
-
-  100% {
+  to {
     transform: rotate(0deg) scale(1);
   }
 
@@ -67,14 +54,14 @@
 
 
 @keyframes entryText {
-  0% {
-    transform: translateY(500px);
+  from {
     opacity: 0;
+    transform: translateX(-350px);
   }
 
-  100% {
-    transform: translateY(0);
+  to {
     opacity: 1;
+    transform: translateX(0);
   }
 
 }

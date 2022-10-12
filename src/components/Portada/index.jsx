@@ -20,7 +20,7 @@ function Portada() {
           </div>
         </div>
         <div>
-          <img className='hero' src={header} alt="hero" />
+          <img loading='lazy' className='hero' src={header} alt="hero" />
         </div>
       </div>
       <div className='links'>

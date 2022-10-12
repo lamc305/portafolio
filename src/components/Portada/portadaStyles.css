@@ -75,6 +75,7 @@ section {
   border: 1px solid transparent;
   transition: ease-in .2s;
   transition-property: color, background-color;
+  box-shadow: 3px 3px 3px black;
 }
 
 .portada__buttons button:nth-child(1) {
@@ -88,7 +89,7 @@ section {
 
 .portada__buttons button:active {
   transform: translateY(3px);
-  box-shadow: 3px 3px 3px black;
+  box-shadow: none;
 }
 
 .animated__entryText {
@@ -155,15 +156,11 @@ section {
 }
 
 @keyframes entryLinks {
-  0% {
+  from {
     opacity: 0;
   }
 
-  50% {
-    opacity: 0;
-  }
-
-  100% {
+  to {
     opacity: 1;
   }
 }
