@@ -68,7 +68,7 @@ section {
   border-radius: 6px;
   outline: none;
   border: none;
-  color: white;
+  color: black;
   font-weight: bold;
   cursor: pointer;
   font-size: 1.5rem;
@@ -84,7 +84,6 @@ section {
 
 .portada__buttons button:nth-child(1):hover {
   background-color: white;
-  color: #F64159;
 }
 
 .portada__buttons button:active {
@@ -98,6 +97,7 @@ section {
 
 .portada__buttons button:nth-child(2) {
   background-color: #294773;
+  color: white;
 }
 
 .portada__buttons button:nth-child(2):hover {
