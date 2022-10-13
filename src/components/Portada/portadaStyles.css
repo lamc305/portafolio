@@ -18,6 +18,7 @@ section {
   width: 75vw;
   margin: 0 auto;
   display: grid;
+  max-width: 1440px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -46,11 +47,17 @@ section {
   font-size: 3rem;
 }
 
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero {
   width: 100%;
   margin: 0 auto;
   object-fit: cover;
-  animation: updown 3s linear infinite;
+  animation: updown 2s linear infinite;
 }
 
 .portada__buttons {
@@ -63,6 +70,10 @@ section {
 }
 
 .portada__buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   width: 125px;
   height: 45px;
   border-radius: 6px;
@@ -155,6 +166,7 @@ section {
   }
 }
 
+/*
 @keyframes entryLinks {
   from {
     opacity: 0;
@@ -170,11 +182,43 @@ section {
 @keyframes slidein {
   from {
     opacity: 0;
-    transform: translateX(350px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+  }
+} */
+
+@media screen and (max-width: 750px) {
+
+  #portada {
+    align-items: flex-start;
+  }
+
+  .portada__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px auto 0;
+  }
+
+  .portada__container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portada__buttons {
+    gap: 5vw;
+  }
+
+  .portada__container div:nth-child(2) {
+    margin-top: 50px;
+  }
+
+  .hero {
+    width: 70%;
   }
 }

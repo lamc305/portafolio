@@ -1,11 +1,16 @@
 import './portadaStyles.css'
 import header from '../../assets/header-img.svg'
 import { BsLinkedin, BsGithub, BsTelegram } from 'react-icons/bs'
+import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai'
 import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 function Portada() {
 
   const { ref1, inView1 } = useContext(IntersectionObserver)
+
+  const sendMessage = () => {
+    window.location.href = 'mailto:lamc3005@gmail.com'
+  }
 
   return (
     <section id='portada' ref={ref1}>
@@ -15,11 +20,11 @@ function Portada() {
           <h1 className={`${inView1 ? 'animated__entryText' : ' '}`}>I'm <span className='red'>Luis Medina</span></h1>
           <h3 className={`${inView1 ? 'animated__entryText' : ' '}`}>I am a Frontend Developer</h3>
           <div className={`${inView1 ? 'animated__entryText portada__buttons' : 'portada__buttons '}`} >
-            <button>Resume</button>
-            <button>Contact me</button>
+            <button>Resume <AiOutlineDownload /> </button>
+            <button onClick={sendMessage}>Contact me <AiOutlineMail /></button>
           </div>
         </div>
-        <div>
+        <div className='hero__container'>
           <img loading='lazy' className='hero' src={header} alt="hero" />
         </div>
       </div>

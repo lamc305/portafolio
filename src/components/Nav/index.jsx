@@ -9,25 +9,12 @@ function Nav() {
   const { toggleActive } = useContext(IntersectionObserver)
 
   return (
-    <div className='navigation'>
-
-      <nav>
-
-        <a className={`${toggleActive === 'portada' ? 'active' : ''}`} href='#portada'><FaHome /></a>
-        <a className={`${toggleActive === 'aboutMe' ? 'active' : ''}`} href='#aboutMe'><SiAboutdotme /></a>
-        <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'
-          aria-label='Projects'
-        ><RiComputerFill /></a>
-
-      </nav>
-
-      <div className='title-navigation'>
-        <p>Portada</p>
-        <p>About me</p>
-        <p>Projects</p>
-      </div>
-
-    </div>
+    <nav>
+      <a className={`${toggleActive === 'portada' ? 'active' : ''}`} href='#portada'><FaHome /></a>
+      <a className={`${toggleActive === 'aboutMe' ? 'active' : ''}`} href='#aboutMe'><SiAboutdotme /></a>
+      <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'
+      ><RiComputerFill /></a>
+    </nav>
   )
 }
 

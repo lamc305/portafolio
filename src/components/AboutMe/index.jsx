@@ -2,8 +2,8 @@ import { useContext } from "react"
 import { IntersectionObserver } from "../../context/IntersectionObserver"
 import logo from '../../assets/why-me2.jpg'
 import './aboutMeStyles.css'
-import skills from '../../skills.json'
 
+import Skills from "../Skills"
 function AboutMe() {
 
   const { ref2, inView2 } = useContext(IntersectionObserver)
@@ -21,14 +21,7 @@ function AboutMe() {
           <p>I'm a <span className='red'>frontend developer with ReactJS</span>, able to carry out the designs that are presented to me and solving the problems that arise as the design is transferred to code </p>
           <p>My Skills are</p>
           <div className='skills__container'>
-            {skills.map(({ id, name, img }) => (
-              <figure key={id}>
-                <img src={img} alt={name} className='icon' />
-                <figcaption>
-                  {name}
-                </figcaption>
-              </figure>
-            ))}
+            <Skills />
           </div>
         </div>
       </div>

@@ -17,7 +17,8 @@
   grid-template-columns: repeat(auto-fill, 320px);
   place-content: center;
   width: 80vw;
-  margin: 0 auto;
+  max-width: 1440px;
+  margin: 0 auto 100px;
   gap: 20px;
 }
 
@@ -100,7 +101,7 @@
   width: 100%;
 }
 
-@keyframes entryProjects {
+/* @keyframes entryProjects {
   from {
     opacity: 0;
     transform: translateY(350px);
@@ -110,4 +111,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */

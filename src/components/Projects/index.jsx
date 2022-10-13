@@ -17,7 +17,7 @@ function Projects() {
       >
         {apps.map(({ name, img, id, tecnologies, repositorio, live }) => (
           <div className="container" key={id}>
-            <img src={img} alt="Avatar" loading='lazy' className="image" />
+            <img src={img} alt={name} loading='lazy' className="image" />
             <div className="overlay">
               <div className="text">
                 <p>{name}</p>
