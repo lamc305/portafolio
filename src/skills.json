@@ -1,0 +1,33 @@
+[
+  {
+    "name": "HTML",
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/html.svg",
+    "id": 1
+  },
+  {
+    "name": "CSS",
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/css.svg",
+    "id": 2
+  },
+  {
+    "name": "JavaScript",
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/javascript.svg",
+    "id": 3
+  },
+  {
+    "name": "React",
+
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/react.svg",
+    "id": 4
+  },
+  {
+    "name": "Git",
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/git.svg",
+    "id": 5
+  },
+  {
+    "name": "Github",
+    "img": "https://main--eclectic-starlight-d4395a.netlify.app/assets/github.svg",
+    "id": 6
+  }
+]
