@@ -15,7 +15,9 @@ function Nav() {
 
         <a className={`${toggleActive === 'portada' ? 'active' : ''}`} href='#portada'><FaHome /></a>
         <a className={`${toggleActive === 'aboutMe' ? 'active' : ''}`} href='#aboutMe'><SiAboutdotme /></a>
-        <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'><RiComputerFill /></a>
+        <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'
+          aria-label='Projects'
+        ><RiComputerFill /></a>
 
       </nav>
 
@@ -23,7 +25,6 @@ function Nav() {
         <p>Portada</p>
         <p>About me</p>
         <p>Projects</p>
-
       </div>
 
     </div>
