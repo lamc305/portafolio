@@ -39,8 +39,15 @@ section {
 
 .portada__text h1 {
   font-size: 4.5rem;
-  padding: 20px 0;
+  margin: 20px 0;
   font-weight: bold;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 14ch;
+  animation: typing 4s steps(14),
+    blink .5s infinite step-end alternate;
+  overflow: hidden;
 }
 
 .portada__text h3 {
@@ -166,28 +173,17 @@ section {
   }
 }
 
-/*
-@keyframes entryLinks {
+@keyframes typing {
   from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+    width: 0;
   }
 }
 
-
-
-@keyframes slidein {
-  from {
-    opacity: 0;
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
-
-  to {
-    opacity: 1;
-  }
-} */
+}
 
 @media screen and (max-width: 750px) {
 
