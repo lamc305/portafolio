@@ -7,8 +7,9 @@
   gap: 100px
 }
 
-#projects h2 {
+#projects > h2 {
   font-size: 3rem;
+  margin-top: 80px;
 }
 
 
