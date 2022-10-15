@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  gap: 100px
+  gap: 80px
 }
 
 #aboutMe h2 {
@@ -18,7 +18,7 @@
 
 .aboutMe__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 450px));
   width: 80vw;
   margin: 0 auto;
   max-width: 1440px;
@@ -44,4 +44,15 @@
 
 .aboutMe__text p:nth-child(2) {
   margin-top: 20px;
+}
+
+.aboutMe__text p:first-child {
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 800px) {
+  #aboutMe {
+    gap: 40px;
+  }
 }
