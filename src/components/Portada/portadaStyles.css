@@ -44,8 +44,8 @@ section {
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 15ch;
-  animation: typing 4s steps(15),
+  width: 14ch;
+  animation: typing 2.5s steps(14),
     blink .5s infinite step-end alternate;
   overflow: hidden;
 }
