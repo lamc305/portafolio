@@ -10,10 +10,10 @@ function Nav() {
 
   return (
     <nav>
-      <a className={`${toggleActive === 'portada' ? 'active' : ''}`} href='#portada'><FaHome /></a>
-      <a className={`${toggleActive === 'aboutMe' ? 'active' : ''}`} href='#aboutMe'><SiAboutdotme /></a>
-      <a className={`${toggleActive === 'projects' ? 'active' : ''}`} href='#projects'
-      ><RiComputerFill /></a>
+      <a className={`${toggleActive === 'portada' ? 'active' : ''} tooltip`} href='#portada'><FaHome /> <span className='tooltiptext' >Home</span> </a>
+      <a className={`${toggleActive === 'aboutMe' ? 'active' : ''} tooltip`} href='#aboutMe'><SiAboutdotme /> <span className='tooltiptext' >About Me</span></a>
+      <a className={`${toggleActive === 'projects' ? 'active' : ''} tooltip`} href='#projects'
+      ><RiComputerFill /> <span className='tooltiptext' >Projects</span></a>
     </nav>
   )
 }

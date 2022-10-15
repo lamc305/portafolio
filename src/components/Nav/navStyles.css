@@ -15,7 +15,7 @@ nav {
 }
 
 
-nav a {
+.tooltip {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +32,7 @@ nav a {
   border: none;
   cursor: pointer;
   transition: transform .3s;
+  position: relative;
 }
 
 .active {
@@ -42,4 +43,19 @@ nav a {
 
 nav a:hover {
   transform: scale(1.2);
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  color: #fff;
+  text-align: end;
+  visibility: hidden;
+  position: absolute;
+  left: -130px;
+  z-index: 777;
+  font-size: 1.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
