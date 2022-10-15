@@ -9,7 +9,7 @@
   },
   {
     "name": "Movie-rec",
-    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
+    "img": "https://raw.githubusercontent.com/lamc305/Movie-rec/master/photos/home.png",
     "id": "2",
     "tecnologies": "ReactJS, Chakra UI, Framer Motion",
     "repositorio": "https://github.com/lamc305/Movie-rec",
