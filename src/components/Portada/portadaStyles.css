@@ -41,13 +41,6 @@ section {
   font-size: 4.5rem;
   margin: 20px 0;
   font-weight: bold;
-  display: block;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 14ch;
-  animation: typing 2.5s steps(14),
-    blink .5s infinite step-end alternate;
-  overflow: hidden;
 }
 
 .portada__text h3 {
@@ -170,18 +163,6 @@ section {
 
   100% {
     transform: translateY(-25px);
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
   }
 }
 
