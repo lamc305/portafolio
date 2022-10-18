@@ -18,7 +18,7 @@ function Portada() {
         <div className='portada__text'>
           <p>Hi there</p>
           <h1>I'm <span className='blue'>Luis Medina</span></h1>
-          <h3>I am a Frontend Developer</h3>
+          <h2>I am a Frontend Developer</h2>
           <div className='portada__buttons' >
             <button><p>Resume</p> <AiOutlineDownload /> </button>
             <button onClick={sendMessage}><p>Contact me</p> <AiOutlineMail /></button>
