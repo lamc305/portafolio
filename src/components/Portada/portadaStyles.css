@@ -58,6 +58,7 @@ section {
   margin: 0 auto;
   object-fit: cover;
   animation: updown 2s linear infinite;
+  border-radius: 50%;
 }
 
 .portada__buttons {
@@ -66,7 +67,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  gap: 110px;
+  gap: 50px;
 }
 
 .portada__buttons button {
@@ -74,12 +75,12 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 125px;
+  width: 140px;
   height: 45px;
   border-radius: 6px;
   outline: none;
   border: none;
-  color: black;
+  letter-spacing: 2px;
   font-weight: bold;
   cursor: pointer;
   font-size: 1.5rem;
@@ -89,8 +90,14 @@ section {
   box-shadow: 3px 3px 3px black;
 }
 
+.portada__buttons button p {
+  color: inherit;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
 .portada__buttons button:nth-child(1) {
-  background-color: #F64159;
+  background-color: #35DFF2;
 }
 
 .portada__buttons button:nth-child(1):hover {
@@ -111,10 +118,15 @@ section {
   color: white;
 }
 
+/* .portada__buttons button:nth-child(2) p {
+  color: white;
+} */
+
 .portada__buttons button:nth-child(2):hover {
   background-color: white;
   color: #294773;
 }
+
 
 .links {
   position: absolute;
@@ -144,12 +156,12 @@ section {
 }
 
 .links a:hover {
-  color: #F64159;
+  color: #35DFF2;
 }
 
 
-.red {
-  color: #F64159;
+.blue {
+  color: #35DFF2;
 }
 
 @keyframes updown {

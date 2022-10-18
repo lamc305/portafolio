@@ -1,12 +1,12 @@
 import './portadaStyles.css'
-import header from '../../assets/header-img.svg'
+import header2 from '../../assets/4900_7_04.webp'
 import { BsLinkedin, BsGithub, BsTelegram } from 'react-icons/bs'
 import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai'
 import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 function Portada() {
 
-  const { ref1, inView1 } = useContext(IntersectionObserver)
+  const { ref1 } = useContext(IntersectionObserver)
 
   const sendMessage = () => {
     window.location.href = 'mailto:lamc3005@gmail.com'
@@ -16,16 +16,16 @@ function Portada() {
     <section id='portada' ref={ref1}>
       <div className='portada__container'>
         <div className='portada__text'>
-          <p className={`${inView1 ? 'animated__entryText' : ' '}`}>Hi there</p>
-          <h1 className={`${inView1 ? 'animated__entryText' : ' '}`}>I'm <span className='red'>Luis Medina</span></h1>
-          <h3 className={`${inView1 ? 'animated__entryText' : ' '}`}>I am a Frontend Developer</h3>
-          <div className={`${inView1 ? 'animated__entryText portada__buttons' : 'portada__buttons '}`} >
-            <button>Resume <AiOutlineDownload /> </button>
-            <button onClick={sendMessage}>Contact me <AiOutlineMail /></button>
+          <p>Hi there</p>
+          <h1>I'm <span className='blue'>Luis Medina</span></h1>
+          <h3>I am a Frontend Developer</h3>
+          <div className='portada__buttons' >
+            <button><p>Resume</p> <AiOutlineDownload /> </button>
+            <button onClick={sendMessage}><p>Contact me</p> <AiOutlineMail /></button>
           </div>
         </div>
         <div className='hero__container'>
-          <img loading='lazy' className='hero' src={header} alt="hero" />
+          <img loading='lazy' className='hero' src={header2} alt="hero" />
         </div>
       </div>
       <div className='links'>
