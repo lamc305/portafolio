@@ -29,9 +29,9 @@ function Portada() {
         </div>
       </div>
       <div className='links'>
-        <a href="https://www.linkedin.com/in/luis-medina-dev/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
-        <a href="https://github.com/lamc305" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-        <a href="https://telegram.me/lamc1058" target="_blank" rel="noopener noreferrer" ><BsTelegram /></a>
+        <a aria-label="Read more about me in my profile on LinkedIn" href="https://www.linkedin.com/in/luis-medina-dev/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
+        <a aria-label="See more projects in my profile on Github" href="https://github.com/lamc305" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
+        <a aria-label="You can contact to me on Telegram" href="https://telegram.me/lamc1058" target="_blank" rel="noopener noreferrer" ><BsTelegram /></a>
         <div></div>
       </div>
     </section>

@@ -10,9 +10,9 @@ function Nav() {
 
   return (
     <nav>
-      <a className={`${toggleActive === 'portada' ? 'active' : ''} tooltip`} href='#portada'><FaHome /> <span className='tooltiptext' >Home</span> </a>
-      <a className={`${toggleActive === 'aboutMe' ? 'active' : ''} tooltip`} href='#aboutMe'><SiAboutdotme /> <span className='tooltiptext' >About Me</span></a>
-      <a className={`${toggleActive === 'projects' ? 'active' : ''} tooltip`} href='#projects'
+      <a aria-label="Go to the section home" className={`${toggleActive === 'portada' ? 'active' : ''} tooltip`} href='#portada'><FaHome /> <span className='tooltiptext' >Home</span> </a>
+      <a aria-label="Go to the section about me" className={`${toggleActive === 'aboutMe' ? 'active' : ''} tooltip`} href='#aboutMe'><SiAboutdotme /> <span className='tooltiptext' >About Me</span></a>
+      <a aria-label="Go to the section projects" className={`${toggleActive === 'projects' ? 'active' : ''} tooltip`} href='#projects'
       ><RiComputerFill /> <span className='tooltiptext' >Projects</span></a>
     </nav>
   )
