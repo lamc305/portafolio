@@ -42,7 +42,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0f0f0fa9;
+  background-color: hsla(0, 0%, 0%, 0.75);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -90,10 +90,8 @@
   color: white;
 }
 
-
-
 .links__projects a:hover {
-  color: #F64159;
+  color: #35DFF2;
 }
 
 .text p {
@@ -101,15 +99,3 @@
   display: block;
   width: 100%;
 }
-
-/* @keyframes entryProjects {
-  from {
-    opacity: 0;
-    transform: translateY(350px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
