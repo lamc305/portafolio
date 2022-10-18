@@ -1,7 +1,7 @@
 [
   {
     "name": "Todo-App",
-    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeDark.png",
+    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeLight.png",
     "id": "1",
     "tecnologies": "ReactJS, CSS vanilla, Framer Motion",
     "repositorio": "https://github.com/lamc305/Todo-App",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Movie-rec",
-    "img": "https://raw.githubusercontent.com/lamc305/Movie-rec/master/photos/home.png",
+    "img": "https://raw.githubusercontent.com/lamc305/Movie-rec/master/photos/home_light.png",
     "id": "2",
     "tecnologies": "ReactJS, Chakra UI, Framer Motion",
     "repositorio": "https://github.com/lamc305/Movie-rec",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Rest Countries",
-    "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__dark.png",
+    "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__light.png",
     "id": "4",
     "tecnologies": "ReactJS, CSS vanilla",
     "repositorio": "https://github.com/lamc305/Rest-Countries",
