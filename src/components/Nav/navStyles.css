@@ -1,3 +1,18 @@
+.container__nav {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 999;
+  height: 200px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip__img {
+  width: 100%;
+}
+
 nav {
   position: fixed;
   right: 20px;

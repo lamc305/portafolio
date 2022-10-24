@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 import { BsGithub } from 'react-icons/bs'
 import { TbWorld } from 'react-icons/tb'
+import { FormattedMessage } from 'react-intl'
 
 function Projects() {
 
@@ -11,7 +12,12 @@ function Projects() {
 
   return (
     <section id='projects' ref={ref3}>
-      <h2 className={`${inView3 ? 'animate__projects' : ' '}`} >Projects</h2>
+      <h2 className={`${inView3 ? 'animate__projects' : ' '}`} >
+        <FormattedMessage 
+          id='projects.title'
+          defaultMessage='Projects'
+        />
+      </h2>
       <div
         className={`${inView3 ? 'animate__projects container__projects' : ' container__projects'}`}
       >

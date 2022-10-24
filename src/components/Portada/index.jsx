@@ -4,6 +4,7 @@ import { BsLinkedin, BsGithub, BsTelegram } from 'react-icons/bs'
 import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai'
 import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
+import { FormattedMessage } from 'react-intl'
 function Portada() {
 
   const { ref1 } = useContext(IntersectionObserver)
@@ -16,12 +17,40 @@ function Portada() {
     <section id='portada' ref={ref1}>
       <div className='portada__container'>
         <div className='portada__text'>
-          <p>Hi there</p>
-          <h1>I'm <span className='blue'>Luis Medina</span></h1>
-          <h2>I am a Frontend Developer</h2>
+          <p>
+            <FormattedMessage
+              id='app.hi'
+              defaultMessage='Hi there'
+            />
+          </p>
+          <h1>
+            <FormattedMessage
+              id='app.name'
+              defaultMessage="I'm Luis Medina"
+              values={{
+                name: <span className="blue">Luis Medina</span>
+              }}
+            />
+          </h1>
+          <h2>
+            <FormattedMessage
+              id='app.job'
+              defaultMessage='I am a Frontend Developer'
+            />
+          </h2>
           <div className='portada__buttons' >
-            <button><p>Resume</p> <AiOutlineDownload /> </button>
-            <button onClick={sendMessage}><p>Contact me</p> <AiOutlineMail /></button>
+            <button><p>
+              <FormattedMessage
+                id='portada.cv'
+                defaultMessage='Resume'
+              />
+            </p> <AiOutlineDownload /> </button>
+            <button onClick={sendMessage}><p>
+              <FormattedMessage
+                id='portada.contact'
+                defaultMessage='Contact me'
+              />
+            </p> <AiOutlineMail /></button>
           </div>
         </div>
         <div className='hero__container'>
