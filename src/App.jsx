@@ -4,19 +4,21 @@ import Nav from './components/Nav'
 import Portada from './components/Portada'
 import Projects from './components/Projects'
 import { IntersectionObserverProvider } from './context/IntersectionObserver'
+import { LangContextProvider } from './context/langContext'
 
 function App() {
 
-
   return (
-    <div className="App">
-      <IntersectionObserverProvider>
-        <Nav />
-        <Portada />
-        <AboutMe />
-        <Projects />
-      </IntersectionObserverProvider>
-    </div>
+    <LangContextProvider>
+      <div className="App">
+        <IntersectionObserverProvider>
+          <Nav />
+          <Portada />
+          <AboutMe />
+          <Projects />
+        </IntersectionObserverProvider>
+      </div>
+    </LangContextProvider>
   )
 }
 
