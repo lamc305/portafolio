@@ -1,0 +1,16 @@
+{
+  "app.hi": "Hola",
+  "app.name": "Soy {name}",
+  "app.job": "Desarrollador Frontend",
+  "portada.cv": "Resumen",
+  "portada.contact": "Contáctame",
+  "about.title": "Acerca de mí",
+  "about.Im": "Yo soy un ",
+  "about.position": "desarrollador frontend con ReactJS",
+  "about.restAboutme": ", capaz de llevar a cabo los diseños que me presenten y resolver los problemas que van surgiendo a medida que se traduce el diseño a código.",
+  "about.skills": "Mis habilidades son",
+  "projects.title": "Proyectos",
+  "nav.home": "Inicio",
+  "nav.about": "Acerca de mí",
+  "nav.projects": "Proyectos"
+}
