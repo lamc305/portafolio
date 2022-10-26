@@ -70,7 +70,7 @@ section {
   gap: 50px;
 }
 
-.portada__buttons button {
+.portada__buttons .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,21 +90,23 @@ section {
   box-shadow: 3px 3px 3px black;
 }
 
-.portada__buttons button p {
+.portada__buttons .btn p {
   color: inherit;
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
 
-.portada__buttons button:nth-child(1) {
+.portada__buttons .btn:nth-child(1) {
   background-color: #35DFF2;
+  text-decoration: none;
+  color: black;
 }
 
-.portada__buttons button:nth-child(1):hover {
+.portada__buttons .btn:nth-child(1):hover {
   background-color: white;
 }
 
-.portada__buttons button:active {
+.portada__buttons .btn:active {
   transform: translateY(3px);
   box-shadow: none;
 }
@@ -113,7 +115,7 @@ section {
   animation: slidein 1s linear;
 }
 
-.portada__buttons button:nth-child(2) {
+.portada__buttons .btn:nth-child(2) {
   background-color: #294773;
   color: white;
 }
@@ -122,7 +124,7 @@ section {
   color: white;
 } */
 
-.portada__buttons button:nth-child(2):hover {
+.portada__buttons .btn:nth-child(2):hover {
   background-color: white;
   color: #294773;
 }

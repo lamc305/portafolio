@@ -5,10 +5,11 @@ import { AiOutlineMail, AiOutlineDownload } from 'react-icons/ai'
 import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 import { FormattedMessage } from 'react-intl'
+import { LangContext } from '../../context/langContext'
 function Portada() {
 
   const { ref1 } = useContext(IntersectionObserver)
-
+  const { locale } = useContext(LangContext)
   const sendMessage = () => {
     window.location.href = 'mailto:lamc3005@gmail.com'
   }
@@ -28,7 +29,7 @@ function Portada() {
               id='app.name'
               defaultMessage="I'm Luis Medina"
               values={{
-                name: <span className="blue">Luis Medina</span>
+                name: <span className="blue">Luis Medina,</span>
               }}
             />
           </h1>
@@ -39,18 +40,25 @@ function Portada() {
             />
           </h2>
           <div className='portada__buttons' >
-            <button><p>
-              <FormattedMessage
-                id='portada.cv'
-                defaultMessage='Resume'
-              />
-            </p> <AiOutlineDownload /> </button>
-            <button onClick={sendMessage}><p>
-              <FormattedMessage
-                id='portada.contact'
-                defaultMessage='Contact me'
-              />
-            </p> <AiOutlineMail /></button>
+            <a
+              href={locale === 'en-US' ? '../../assets/CVLuisMedina-English.pdf' : '../../assets/CVLuisMedina-Spanish.pdf'}
+              download
+              className='btn'
+            >
+              <p>
+                <FormattedMessage
+                  id='portada.cv'
+                  defaultMessage='Resume'
+                />
+              </p> <AiOutlineDownload />
+            </a>
+            <button onClick={sendMessage} className='btn'>
+              <p>
+                <FormattedMessage
+                  id='portada.contact'
+                  defaultMessage='Contact me'
+                />
+              </p> <AiOutlineMail /></button>
           </div>
         </div>
         <div className='hero__container'>
