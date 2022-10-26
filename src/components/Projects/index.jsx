@@ -13,7 +13,7 @@ function Projects() {
   return (
     <section id='projects' ref={ref3}>
       <h2 className={`${inView3 ? 'animate__projects' : ' '}`} >
-        <FormattedMessage 
+        <FormattedMessage
           id='projects.title'
           defaultMessage='Projects'
         />
@@ -30,8 +30,8 @@ function Projects() {
                 <p>{tecnologies}</p>
               </div>
               <div className='links__projects'>
-                <a href={repositorio} target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-                <a href={live} target="_blank" rel="noopener noreferrer"><TbWorld /></a>
+                <a aria-label={`Link to repository of ${name}`} href={repositorio} target="_blank" rel="noopener noreferrer"><BsGithub /></a>
+                <a aria-label={`Link to live page of ${name}`} href={live} target="_blank" rel="noopener noreferrer"><TbWorld /></a>
               </div>
             </div>
           </div>
