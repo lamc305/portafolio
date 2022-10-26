@@ -3,7 +3,7 @@
     "name": "Todo-App",
     "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeLight.webp",
     "id": "1",
-    "tecnologies": "ReactJS, CSS vanilla, Framer Motion",
+    "tecnologies": "ReactJS, CSS Vanilla, Framer Motion",
     "repositorio": "https://github.com/lamc305/Todo-App",
     "live": "https://todo-app-lamc305.vercel.app/"
   },
@@ -19,7 +19,7 @@
     "name": "Pizzería Don Remolo",
     "img": "https://raw.githubusercontent.com/lamc305/Pizzeria-736/main/photos/home.webp",
     "id": "3",
-    "tecnologies": "ReactJS, CSS vanilla, Intersection Observer",
+    "tecnologies": "ReactJS, CSS Vanilla, Intersection Observer",
     "repositorio": "https://github.com/lamc305/Pizzeria-736",
     "live": "https://don-remolo-pizzeria.vercel.app/"
   },
@@ -27,7 +27,7 @@
     "name": "Rest Countries",
     "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__light.webp",
     "id": "4",
-    "tecnologies": "ReactJS, CSS vanilla",
+    "tecnologies": "ReactJS, CSS Vanilla",
     "repositorio": "https://github.com/lamc305/Rest-Countries",
     "live": "https://rest-countries-lamc305.vercel.app/"
   }
