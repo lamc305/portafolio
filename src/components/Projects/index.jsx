@@ -8,18 +8,18 @@ import { FormattedMessage } from 'react-intl'
 
 function Projects() {
 
-  const { ref3, inView3 } = useContext(IntersectionObserver)
+  const { ref3 } = useContext(IntersectionObserver)
 
   return (
     <section id='projects' ref={ref3}>
-      <h2 className={`${inView3 ? 'animate__projects' : ' '}`} >
+      <h2>
         <FormattedMessage
           id='projects.title'
           defaultMessage='Projects'
         />
       </h2>
       <div
-        className={`${inView3 ? 'animate__projects container__projects' : ' container__projects'}`}
+        className='container__projects'
       >
         {apps.map(({ name, img, id, tecnologies, repositorio, live }) => (
           <div className="container" key={id}>
