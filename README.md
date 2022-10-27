@@ -11,7 +11,7 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Toggle language
-- See my projects, repository and page
+- See my projects, and take a look of the repositories and pages of this projects
 
 ### Screenshot
 
