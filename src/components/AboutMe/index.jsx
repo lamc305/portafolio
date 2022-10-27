@@ -38,7 +38,7 @@ function AboutMe() {
             </span>
             <FormattedMessage
               id='about.restAboutme'
-              defaultMessage=', able to carry out the designs that are presented to me and solving the problems that arise as the design is transferred to code'
+              defaultMessage=', capable of translating design into code and solving problems along the way, of the best possible way and meeting deadlines set.'
             />
 
           </p>

@@ -12,6 +12,10 @@
   padding-top: 40px;
 }
 
+#aboutMe h2::selection {
+  background-color: #78787878;
+}
+
 .animate__textAbout {
   animation: entryText 1s linear;
 }
@@ -33,6 +37,10 @@
   box-shadow: -5px 5px 10px black;
 }
 
+.aboutMe__img::selection {
+  background: #78787878;
+}
+
 .animated__img {
   animation: entry 1s linear;
 }
@@ -40,6 +48,14 @@
 .aboutMe__text {
   font-size: 1.8rem;
   line-height: 30px;
+}
+
+.aboutMe__text p::selection {
+  background-color: #78787878;
+}
+
+.aboutMe__text p span::selection {
+  background-color: #78787878;
 }
 
 .aboutMe__text p:nth-child(2) {

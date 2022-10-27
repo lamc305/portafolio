@@ -6,6 +6,9 @@ import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 import { FormattedMessage } from 'react-intl'
 import { LangContext } from '../../context/langContext'
+import cvSpanish from '../../assets/CV-Luis-Medina-Spanish.pdf'
+import cvEnglish from '../../assets/CV-Luis-Medina-English.pdf'
+
 function Portada() {
 
   const { ref1 } = useContext(IntersectionObserver)
@@ -41,7 +44,7 @@ function Portada() {
           </h2>
           <div className='portada__buttons' >
             <a
-              href={locale === 'en-US' ? '../../assets/CVLuisMedina-English.pdf' : '../../assets/CVLuisMedina-Spanish.pdf'}
+              href={locale === 'en-US' ? cvEnglish : cvSpanish}
               download
               className='btn'
             >

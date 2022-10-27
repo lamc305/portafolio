@@ -30,3 +30,8 @@
 .skills__container figure figcaption {
   text-align: center;
 }
+
+.skills__container figure img::selection,
+.skills__container figure figcaption::selection {
+  background: #78787878;
+}

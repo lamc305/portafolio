@@ -2,7 +2,6 @@ import './navStyles.css'
 import { FaHome } from 'react-icons/fa'
 import { SiAboutdotme } from 'react-icons/si'
 import { RiComputerFill } from 'react-icons/ri'
-import { HiTranslate } from 'react-icons/hi'
 import { useContext } from 'react'
 import { IntersectionObserver } from '../../context/IntersectionObserver'
 import { LangContext } from '../../context/langContext'
@@ -17,9 +16,9 @@ function Nav() {
   return (
     <div className='container__nav'>
       {locale === 'en-US' ?
-        <div onClick={() => handleLanguage('es-ES')} className='tooltip'><img className='tooltip__img' src={spain} alt="icon-spain" /></div>
+        <div onClick={() => handleLanguage('es-ES')} className='tooltip'><img className='tooltip__img' src={spain} alt="icon-spain" /><span className='tooltiptext'>Cambiar a Español</span></div>
         :
-        <div onClick={() => handleLanguage('en-US')} className='tooltip'><img className='tooltip__img' src={usa} alt="icon-usa" /></div>
+        <div onClick={() => handleLanguage('en-US')} className='tooltip'><img className='tooltip__img' src={usa} alt="icon-usa" /><span className='tooltiptext'>Change to English</span></div>
       }
 
       <nav>

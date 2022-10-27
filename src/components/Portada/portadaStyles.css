@@ -32,6 +32,16 @@ section {
   letter-spacing: 3px;
 }
 
+.portada__text p::selection,
+.portada__text h1::selection,
+.portada__text h2::selection {
+  background: #78787878;
+}
+
+.portada__text h1 span::selection {
+  background-color: #78787878;
+}
+
 .portada__text p {
   font-size: 2.5rem;
   color: #AEBDD0;
@@ -61,6 +71,10 @@ section {
   border-radius: 50%;
 }
 
+.hero::selection {
+  background: #78787878;
+}
+
 .portada__buttons {
   margin-top: 50px;
   display: flex;
@@ -75,8 +89,8 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 140px;
-  height: 45px;
+  width: 15.5rem;
+  height: 4.8rem;
   border-radius: 6px;
   outline: none;
   border: none;

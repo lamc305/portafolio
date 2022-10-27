@@ -3,7 +3,7 @@
   right: 20px;
   bottom: 50px;
   z-index: 999;
-  height: 200px;
+  height: 185px;
   width: 48px;
   display: flex;
   justify-content: center;
@@ -46,18 +46,18 @@ nav {
   outline: none;
   border: none;
   cursor: pointer;
-  transition: transform .3s;
+  transition: transform .5s;
   position: relative;
+}
+
+.tooltip:hover {
+  transform: scale(1.2);
 }
 
 .active {
   background-color: #35DFF2;
   transition: .5s;
   transition-property: color, transform;
-}
-
-nav a:hover {
-  transform: scale(1.2);
 }
 
 .tooltip .tooltiptext {
