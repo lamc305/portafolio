@@ -7,11 +7,9 @@ export const LangContext = createContext()
 
 export function LangContextProvider({ children }) {
 
-
   const langStorage = localStorage.getItem('lang')
   const [lang, setLang] = useState(langStorage === 'es-ES' ? mensagesEspañol : mensagesIngles)
   const [locale, setLocale] = useState(langStorage === 'es-ES' ? 'es-ES' : 'en-US')
-
 
   const handleLanguage = (language) => {
     switch (language) {

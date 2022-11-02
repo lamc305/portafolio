@@ -2,9 +2,6 @@ import { createContext, useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
 
 export const IntersectionObserver = createContext()
-
-
-
 export function IntersectionObserverProvider({ children }) {
 
   const [toggleActive, setToggleActive] = useState('portada')
@@ -17,7 +14,6 @@ export function IntersectionObserverProvider({ children }) {
   const [ref3, inView3] = useInView({
     "rootMargin": "-150px"
   })
-
 
   useEffect(() => {
     if (inView1) setToggleActive('portada')
