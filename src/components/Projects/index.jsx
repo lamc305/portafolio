@@ -30,8 +30,20 @@ function Projects() {
                 <p>{tecnologies}</p>
               </div>
               <div className='links__projects'>
-                <a aria-label={`Link to repository of ${name}`} href={repositorio} target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-                <a aria-label={`Link to live page of ${name}`} href={live} target="_blank" rel="noopener noreferrer"><TbWorld /></a>
+                <a
+                  aria-label={`Link to repository of ${name}`}
+                  href={repositorio}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <BsGithub />
+                </a>
+                <a
+                  aria-label={`Link to live page of ${name}`}
+                  href={live}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <TbWorld />
+                </a>
               </div>
             </div>
           </div>
