@@ -45,7 +45,7 @@ function Portada() {
           <div className='portada__buttons' >
             <a
               href={locale === 'en-US' ? cvEnglish : cvSpanish}
-              download
+              target='_blank'
               className='btn'
             >
               <p>
