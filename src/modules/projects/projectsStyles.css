@@ -4,14 +4,13 @@
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  gap: 100px
+  gap: 100px;
 }
 
 #projects h2 {
   font-size: 3rem;
   margin-top: 80px;
 }
-
 
 #projects h2::selection {
   background: #78787878;
@@ -54,7 +53,7 @@
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 10px;
 }
 
@@ -99,7 +98,7 @@
 }
 
 .links__projects a:hover {
-  color: #35DFF2;
+  color: #35dff2;
 }
 
 .text p {
