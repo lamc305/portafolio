@@ -14,7 +14,10 @@ function Projects() {
       <h2>
         <FormattedMessage id="projects.title" defaultMessage="Projects" />
       </h2>
-      <div className="container__projects">
+      <div
+        className="grid gap-5 justify-center w-[80vw] max-w-[110rem]"
+        style={{ gridTemplateColumns: "repeat(auto-fill, 300px)" }}
+      >
         {apps.map(({ name, img, id, tecnologies, repositorio, live }) => (
           <div className="container" key={id}>
             <img src={img} alt={name} loading="lazy" className="image" />
@@ -23,7 +26,7 @@ function Projects() {
                 <p>{name}</p>
                 <p>{tecnologies}</p>
               </div>
-              <div className="links__projects">
+              <div className="links__projects mt-2">
                 <a
                   aria-label={`Link to repository of ${name}`}
                   href={repositorio}

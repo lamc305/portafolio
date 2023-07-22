@@ -3,7 +3,7 @@ import { IntersectionObserver } from "../../context/IntersectionObserver";
 import logo from "../../assets/why-me2.webp";
 import "./aboutMeStyles.css";
 
-import Skills from "./skills";
+import Skills from "../skills";
 import { FormattedMessage } from "react-intl";
 function AboutMe() {
   const { ref2 } = useContext(IntersectionObserver);

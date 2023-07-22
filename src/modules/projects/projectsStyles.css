@@ -4,12 +4,11 @@
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  gap: 100px;
 }
 
 #projects h2 {
   font-size: 3rem;
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 #projects h2::selection {
@@ -17,24 +16,21 @@
 }
 
 .container__projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   place-content: center;
-  width: 80vw;
-  max-width: 1440px;
   margin: 0 auto 100px;
   gap: 20px;
 }
 
 .container {
   position: relative;
-  width: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
 }
 
 .image {
   display: block;
-  height: auto;
+  height: 200px;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -79,6 +75,7 @@
 }
 
 .links__projects {
+  display: flex;
   color: white;
   font-size: 3.9rem;
   position: absolute;

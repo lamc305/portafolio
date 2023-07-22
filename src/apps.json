@@ -9,11 +9,11 @@
   },
   {
     "name": "Movie-rec",
-    "img": "https://raw.githubusercontent.com/lamc305/Movie-rec/master/photos/home_light.webp",
+    "img": "https://raw.githubusercontent.com/lamc305/movie-rec-2.0/main/public/portada.webp",
     "id": "2",
-    "tecnologies": "ReactJS, Chakra UI, Framer Motion",
-    "repositorio": "https://github.com/lamc305/Movie-rec",
-    "live": "https://movie-rec.vercel.app/"
+    "tecnologies": "NextJS, TailwindCSS",
+    "repositorio": "https://github.com/lamc305/movie-rec-2.0",
+    "live": "https://movie-rec-2-0.vercel.app/"
   },
   {
     "name": "Pizzería Don Remolo",
@@ -30,5 +30,13 @@
     "tecnologies": "ReactJS, CSS Vanilla",
     "repositorio": "https://github.com/lamc305/Rest-Countries",
     "live": "https://rest-countries-lamc305.vercel.app/"
+  },
+  {
+    "name": "Pokedex",
+    "img": "https://raw.githubusercontent.com/lamc305/pokedex/main/public/portada.webp",
+    "id": "5",
+    "tecnologies": "NextJS, TypeScript, TailwindCSS",
+    "repositorio": "https://github.com/lamc305/pokedex",
+    "live": "https://pokedex-lamc305.vercel.app/"
   }
 ]
