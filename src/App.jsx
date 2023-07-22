@@ -1,13 +1,12 @@
-import './App.css'
-import AboutMe from './components/AboutMe'
-import Nav from './components/Nav'
-import Portada from './components/Portada'
-import Projects from './components/Projects'
-import { IntersectionObserverProvider } from './context/IntersectionObserver'
-import { LangContextProvider } from './context/langContext'
+import "./App.css";
+import AboutMe from "./modules/about-me";
+import Nav from "./modules/nav";
+import Portada from "./modules/portada";
+import Projects from "./modules/projects";
+import { IntersectionObserverProvider } from "./context/IntersectionObserver";
+import { LangContextProvider } from "./context/langContext";
 
 function App() {
-
   return (
     <LangContextProvider>
       <div className="App">
@@ -19,7 +18,7 @@ function App() {
         </IntersectionObserverProvider>
       </div>
     </LangContextProvider>
-  )
+  );
 }
 
-export default App
+export default App;

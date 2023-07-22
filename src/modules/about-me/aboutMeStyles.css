@@ -4,12 +4,11 @@
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  gap: 80px
 }
 
 #aboutMe h2 {
   font-size: 3rem;
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 #aboutMe h2::selection {
@@ -65,7 +64,6 @@
 .aboutMe__text p:first-child {
   text-align: justify;
 }
-
 
 @media screen and (max-width: 800px) {
   #aboutMe {
