@@ -6,8 +6,8 @@ import { useContext } from "react";
 import { IntersectionObserver } from "../../context/IntersectionObserver";
 import { FormattedMessage } from "react-intl";
 import { LangContext } from "../../context/langContext";
-import cvSpanish from "../../assets/CV-Luis-Medina-Desarrollador-Frontend.pdf";
-import cvEnglish from "../../assets/CV-Luis-Medina-Frontend-Developer.pdf";
+import cvSpanish from "../../assets/Luis-Medina-Desarrollador-Frontend.pdf";
+import cvEnglish from "../../assets/Luis-Medina-Frontend-Developer.pdf";
 
 function Portada() {
   const { ref1 } = useContext(IntersectionObserver);
