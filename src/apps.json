@@ -3,7 +3,7 @@
     "name": "Todo-App",
     "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeLight.webp",
     "id": "1",
-    "tecnologies": "ReactJS, CSS Vanilla, Framer Motion",
+    "tecnologies": ["React", "CSS Vanilla", "Framer Motion"],
     "repositorio": "https://github.com/lamc305/Todo-App",
     "live": "https://todo-app-lamc305.vercel.app/"
   },
@@ -11,7 +11,7 @@
     "name": "Movie-rec",
     "img": "https://raw.githubusercontent.com/lamc305/movie-rec-2.0/main/public/portada.webp",
     "id": "2",
-    "tecnologies": "NextJS, TailwindCSS",
+    "tecnologies": ["Next.js", "Tailwind CSS"],
     "repositorio": "https://github.com/lamc305/movie-rec-2.0",
     "live": "https://movie-rec-2-0.vercel.app/"
   },
@@ -19,7 +19,7 @@
     "name": "Pizzería Don Remolo",
     "img": "https://raw.githubusercontent.com/lamc305/Pizzeria-736/main/photos/home.webp",
     "id": "3",
-    "tecnologies": "ReactJS, CSS Vanilla, Intersection Observer",
+    "tecnologies": ["React", "CSS Vanilla", "Intersection Observer"],
     "repositorio": "https://github.com/lamc305/Pizzeria-736",
     "live": "https://don-remolo-pizzeria.vercel.app/"
   },
@@ -27,7 +27,7 @@
     "name": "Rest Countries",
     "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__light.webp",
     "id": "4",
-    "tecnologies": "ReactJS, CSS Vanilla",
+    "tecnologies": ["ReactJS", "CSS Vanilla"],
     "repositorio": "https://github.com/lamc305/Rest-Countries",
     "live": "https://rest-countries-lamc305.vercel.app/"
   },
@@ -35,7 +35,7 @@
     "name": "Pokedex",
     "img": "https://raw.githubusercontent.com/lamc305/pokedex/main/public/portada.webp",
     "id": "5",
-    "tecnologies": "NextJS, TypeScript, TailwindCSS",
+    "tecnologies": ["NextJS", "TypeScript", "TailwindCSS"],
     "repositorio": "https://github.com/lamc305/pokedex",
     "live": "https://pokedex-lamc305.vercel.app/"
   }
