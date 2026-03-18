@@ -26,7 +26,7 @@ export default function Projects() {
           {apps.map((project, idx) => (
             <article
               key={idx}
-              className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
+              className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 flex flex-col grow h-full"
             >
               <div className="relative aspect-video overflow-hidden">
                 <Image
@@ -38,7 +38,7 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 grow flex flex-col">
                 <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {project.name}
                 </h3>
@@ -55,7 +55,10 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
+                <div
+                  className="flex gap-3 h-full  "
+                  style={{ alignItems: "self-end" }}
+                >
                   <Link
                     href={project.live}
                     target="_blank"

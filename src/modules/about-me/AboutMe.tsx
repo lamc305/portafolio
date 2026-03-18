@@ -63,7 +63,7 @@ export default function AboutMe() {
             <div className="relative w-64 h-64 rounded-lg overflow-hidden shadow-xl shadow-primary/10">
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
               <img
-                src="/professional-developer-portrait-minimal.jpg"
+                src="/generatedimage.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
