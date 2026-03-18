@@ -1,21 +1,23 @@
-import AboutMe from "@/modules/about-me";
+import { LanguageProvider } from "@/hooks/useLanguage";
+import AboutMe from "@/modules/about-me/AboutMe";
 import Contact from "@/modules/contact";
-import Footer from "@/modules/footer";
-import Header from "@/modules/header";
-import Hero from "@/modules/hero";
+import Footer from "@/modules/footer/Footer";
+import Header from "@/modules/header/Header";
+import Hero from "@/modules/hero/Hero";
 import Projects from "@/modules/projects";
-import Skills from "@/modules/skills";
 
-export default function Portfolio() {
+export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-gradient-to-br to-blue-400 from-blue-950">
+    <LanguageProvider>
       <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Hero />
+        <Projects />
+        {/* <WorkSection /> */}
+        <AboutMe />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </LanguageProvider>
   );
 }

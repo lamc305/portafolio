@@ -1,67 +1,82 @@
+"use client";
 import apps from "@/apps.json";
-import { ExternalLink } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
-  return (
-    <section
-      id="projects"
-      className="min-h-screen w-full mx-auto bg-gray-800 pb-7"
-    >
-      <div className="max-w-6xl pt-32 mx-auto">
-        <h4 className="text-white text-center text-3xl font-semibold">
-          Proyectos Destacados
-        </h4>
+  const { t } = useLanguage();
 
-        <p className="text-gray-300 text-xl mt-3 text-center">
-          Una selección de mis trabajos más recientes y significativos
+  return (
+    <section id="work" className="min-h-screen w-full mx-auto pb-7">
+      <div className="max-w-5xl pt-32 mx-auto">
+        <div className="flex items-center gap-4 mb-16">
+          <span className="font-mono text-primary text-sm">01.</span>
+          <h2 className="text-2xl font-semibold text-foreground">
+            {t["work.title"]}
+          </h2>
+          <div className="flex-1 h-px bg-border ml-4"></div>
+        </div>
+
+        <p className="text-muted-foreground text-lg text-center max-w-2xl mx-auto mb-12">
+          {t["projects.selection"]}
         </p>
-        <div className="grid grid-cols-3 gap-12 mt-10 !max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {apps.map((project, idx) => (
-            <div
+            <article
               key={idx}
-              className="border-0 shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300 min-h-[350px] rounded-2xl bg-gray-900 flex flex-col grow"
+              className="group relative bg-card border border-border/50 rounded-lg overflow-hidden hover:shadow-xl hover:shadow-primary/10 transition-all duration-300"
             >
-              <Image
-                src={project.img}
-                alt={project.name}
-                width={300}
-                height={200}
-                className="w-full h-36"
-              />
-              <div className="p-3 px-5 grow h-full flex flex-col">
-                <p className="text-white text-lg text-center">{project.name}</p>
-                <div className="flex flex-wrap gap-3 mt-3">
-                  {project.tecnologies.map((res) => (
+              <div className="relative aspect-video overflow-hidden">
+                <Image
+                  src={project.img}
+                  alt={project.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {project.name}
+                </h3>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tecnologies.map((tech) => (
                     <span
-                      className="text-gray-300 border border-white py-1 px-2 rounded-2xl text-xs"
-                      key={res}
+                      key={tech}
+                      className="inline-flex items-center gap-1 px-2 py-1 text-xs bg-muted text-muted-foreground rounded-md"
                     >
-                      {res}
+                      <span className="w-2 h-2 bg-primary rounded-full" />
+                      {tech}
                     </span>
                   ))}
                 </div>
-                <div className="mt-8 grow flex items-end justify-start gap-3">
+
+                <div className="flex gap-3">
                   <Link
                     href={project.live}
                     target="_blank"
-                    className="px-4 py-2 rounded-lg bg-cyan-500 text-white cursor-pointer font-semibold hover:bg-cyan-600 transition-all duration-200 flex gap-1 items-center text-sm"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
                   >
-                    <ExternalLink className="h-[18px] w-[18px]" />
-                    Demo
+                    <ExternalLink className="w-4 h-4" />
+                    {t["projects.demo"]}
                   </Link>
                   <Link
-                    target="_blank"
                     href={project.repositorio}
-                    className="px-4 py-2 rounded-lg bg-gray-500  text-white cursor-pointer font-semibold hover:bg-gray-400 transition-all duration-200 items-center flex gap-1 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 border border-border text-foreground rounded-md hover:bg-muted transition-colors text-sm font-medium"
                   >
-                    <Image src="/github.svg" alt="" width={18} height={18} />
-                    Código
+                    <Github className="w-4 h-4" />
+                    {t["projects.code"]}
                   </Link>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

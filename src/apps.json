@@ -16,14 +16,6 @@
     "live": "https://movie-rec-2-0.vercel.app/"
   },
   {
-    "name": "Pizzería Don Remolo",
-    "img": "https://raw.githubusercontent.com/lamc305/Pizzeria-736/main/photos/home.webp",
-    "id": "3",
-    "tecnologies": ["React", "CSS Vanilla", "Intersection Observer"],
-    "repositorio": "https://github.com/lamc305/Pizzeria-736",
-    "live": "https://don-remolo-pizzeria.vercel.app/"
-  },
-  {
     "name": "Rest Countries",
     "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__light.webp",
     "id": "4",
