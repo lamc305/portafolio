@@ -3,7 +3,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useNavigation } from "@/hooks/useNavegation";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
-export default function Hero() {
+export default function HeroView() {
   const { t } = useLanguage();
   const { scrollToSection } = useNavigation();
 

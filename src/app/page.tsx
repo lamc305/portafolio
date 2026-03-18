@@ -1,23 +1,22 @@
 import { LanguageProvider } from "@/hooks/useLanguage";
-import AboutMe from "@/modules/about-me/AboutMe";
-import Contact from "@/modules/contact";
-import Footer from "@/modules/footer/Footer";
-import Header from "@/modules/header/Header";
-import Hero from "@/modules/hero/Hero";
-import Projects from "@/modules/projects";
+import AboutMeView from "@/modules/about-me/AboutMeView";
+import ContactView from "@/modules/contact/ContactView";
+import FooterView from "@/modules/footer/FooterView";
+import HeaderView from "@/modules/header/HeaderView";
+import HeroView from "@/modules/hero/HeroView";
+import ProjectsView from "@/modules/projects/ProjectsView";
 
 export default function Home() {
   return (
     <LanguageProvider>
-      <Header />
+      <HeaderView />
       <main>
-        <Hero />
-        <Projects />
-        {/* <WorkSection /> */}
-        <AboutMe />
-        <Contact />
+        <HeroView />
+        <ProjectsView />
+        <AboutMeView />
+        <ContactView />
       </main>
-      <Footer />
+      <FooterView />
     </LanguageProvider>
   );
 }

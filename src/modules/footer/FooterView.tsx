@@ -2,7 +2,7 @@
 
 import { useLanguage } from "../../hooks/useLanguage";
 
-export default function Footer() {
+export default function FooterView() {
   const { t } = useLanguage();
 
   return (

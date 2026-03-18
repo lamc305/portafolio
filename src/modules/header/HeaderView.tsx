@@ -3,7 +3,7 @@
 import { useLanguage } from "@/hooks/useLanguage";
 import { useNavigation } from "@/hooks/useNavegation";
 
-export default function Header() {
+export default function HeaderView() {
   const { language, setLanguage, t } = useLanguage();
   const { scrollToSection } = useNavigation();
 

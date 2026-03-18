@@ -3,7 +3,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useNavigation } from "@/hooks/useNavegation";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-export default function Contact() {
+export default function ContactView() {
   const { t } = useLanguage();
   const { scrollToSection } = useNavigation();
 
