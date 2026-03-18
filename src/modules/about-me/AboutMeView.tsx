@@ -12,7 +12,7 @@ const technologies = [
   "Git",
 ];
 
-export default function AboutMe() {
+export default function AboutMeView() {
   const { t } = useLanguage();
 
   return (
