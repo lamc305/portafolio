@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
         hostname: "raw.githubusercontent.com",
       },
     ],
+    unoptimized: true,
   },
 };
 

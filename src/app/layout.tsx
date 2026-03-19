@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: "Frontend Developer — Portfolio - Luis Medina",
   description:
     "Desarrollador Frontend especializado en React, Next.js y experiencias web modernas.",
+  keywords:
+    "frontend, developer, react, nextjs, typescript, javascript, portfolio, luis medina, lamc305, ingenerio",
 };
 
 export default function RootLayout({
