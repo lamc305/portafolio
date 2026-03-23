@@ -1,34 +1,34 @@
 [
   {
     "name": "Todo-App",
-    "img": "https://raw.githubusercontent.com/lamc305/Todo-App/main/photos/modeLight.webp",
+    "img": "https://raw.githubusercontent.com/soyluismedina/Todo-App/main/photos/modeLight.webp",
     "id": "1",
     "tecnologies": ["React", "CSS Vanilla", "Framer Motion"],
-    "repositorio": "https://github.com/lamc305/Todo-App",
+    "repositorio": "https://github.com/soyluismedina/Todo-App",
     "live": "https://todo-app-lamc305.vercel.app/"
   },
   {
     "name": "Movie-rec",
-    "img": "https://raw.githubusercontent.com/lamc305/movie-rec-2.0/main/public/portada.webp",
+    "img": "https://raw.githubusercontent.com/soyluismedina/movie-rec-2.0/main/public/image.png",
     "id": "2",
     "tecnologies": ["Next.js", "Tailwind CSS"],
-    "repositorio": "https://github.com/lamc305/movie-rec-2.0",
+    "repositorio": "https://github.com/soyluismedina/movie-rec-2.0",
     "live": "https://movie-rec-2-0.vercel.app/"
   },
   {
     "name": "Rest Countries",
-    "img": "https://raw.githubusercontent.com/lamc305/Rest-Countries/main/photos/Home__light.webp",
+    "img": "https://raw.githubusercontent.com/soyluismedina/Rest-Countries/main/photos/image.png",
     "id": "4",
-    "tecnologies": ["ReactJS", "CSS Vanilla"],
-    "repositorio": "https://github.com/lamc305/Rest-Countries",
+    "tecnologies": ["NextJS", "TypeScript", "CSS Vanilla", "App Router"],
+    "repositorio": "https://github.com/soyluismedina/rest-countries",
     "live": "https://rest-countries-lamc305.vercel.app/"
   },
   {
     "name": "Pokedex",
-    "img": "https://raw.githubusercontent.com/lamc305/pokedex/main/public/portada.webp",
+    "img": "https://raw.githubusercontent.com/soyluismedina/pokedex/main/public/portada.webp",
     "id": "5",
     "tecnologies": ["NextJS", "TypeScript", "TailwindCSS"],
-    "repositorio": "https://github.com/lamc305/pokedex",
+    "repositorio": "https://github.com/soyluismedina/pokedex",
     "live": "https://pokedex-lamc305.vercel.app/"
   }
 ]
